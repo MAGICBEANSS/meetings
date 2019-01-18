@@ -27,4 +27,14 @@ RoomService rs;
 		
 		
 	}
+	
+	@RequestMapping(value = "/check" , method = RequestMethod.GET)
+	public ResponseEntity<String> checkmate() {
+		
+		return new ResponseEntity<String>("ABC",HttpStatus.ACCEPTED);
+		//ResponseEntity<Rooms> rt = new ResponseEntity<Rooms>(newroom,HttpStatus.OK);
+		// return rt;
+		
+		
+	}
 }
