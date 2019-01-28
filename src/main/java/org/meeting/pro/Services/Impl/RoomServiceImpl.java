@@ -17,5 +17,17 @@ public class RoomServiceImpl implements RoomService {
 		return rooms.createRoom(r);
 		// return null;
 	}
+	public ResponseEntity<Rooms> updateRoom(Rooms r) {
+		// TODO Auto-generated method stub
+		return rooms.updateRoom(r);
+	}
+	public ResponseEntity<Rooms> deleteRoom(String rid) {
+		// TODO Auto-generated method stub
+		return rooms.deleteRoom(rid);
+	}
+	public ResponseEntity<Rooms> getRoom(String rid) {
+		// TODO Auto-generated method stub
+		return rooms.getRoom(rid);
+	}
 
 }
